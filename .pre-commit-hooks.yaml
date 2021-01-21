@@ -1,0 +1,7 @@
+- id: sync-conda-env
+  name: Sync conda environment
+  description: Makes sure that the environment.yml file at the repo root is up to date with the currently activated conda environment
+  entry: pre_commit_hooks/sync-conda-env.sh
+  language: script
+  always_run: true
+  pass_filenames: false
